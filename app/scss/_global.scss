@@ -1,0 +1,45 @@
+html,
+body{
+  max-width: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+body {
+  @include montserrat-500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #282828;
+}
+
+.title {
+  @include montserrat-700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0499dd;
+}
+
+.btn {
+  padding: 16px 52px;
+  background: linear-gradient(92.71deg, #0499dd 0%, #17c1bc 100%);
+  border-radius: 60px;
+  color: #fff;
+  transition: color 0.4s;
+  &:hover{
+    color: #ffc700;
+    transition: color 0.4s;
+  }
+}
+
+.container{
+  max-width: 1150px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.more{
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration: underline;
+}
+

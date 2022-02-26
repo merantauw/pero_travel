@@ -1,0 +1,12 @@
+@mixin montserrat-500{
+  font-family: "Montserrat-Medium", serif;
+  font-weight: 500;
+}
+@mixin montserrat-700{
+  font-family: "Montserrat-Bold", serif;
+  font-weight: 700;
+}
+@mixin montserrat-900{
+  font-family: "Montserrat-Black", serif;
+  font-weight: 900;
+}
