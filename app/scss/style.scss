@@ -276,4 +276,76 @@
   }
 }
 
+.tour-types{
+  padding: 150px 0;
+  &__title{
+    margin-bottom: 90px;
+  }
+  &__inner{
+    margin-bottom: 20px;
+  }
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item{
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 95px;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 75px;
+      height: 75px;
+      left: 0;
+      top: 0;
+    }
+  }
+  &__item:nth-child(1)::before{
+    background: url(../images/icons/bus.png) no-repeat;
+  }
+  &__item:nth-child(2)::before{
+    background: url(../images/icons/jeep.png) no-repeat;
+  }
+  &__item:nth-child(3)::before{
+    background: url(../images/icons/yacht.png) no-repeat;
+  }
+  &__item:nth-child(4)::before{
+    background: url(../images/icons/canyoning.png) no-repeat;
+    height: 66px;
+  }
+  &__subtitle{
+    @include montserrat-700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #0499dd;
+    margin-bottom: 10px;
+  }
+  &__text{
+    max-width: 455px;
+    width: 100%;
+  }
+  &__desc{
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__btn{
+    display: block;
+    max-width: 230px;
+    margin: 0 auto;
+    svg path{
+      transition: fill 0.4s;
+    }
+  }
+  &__btn:hover{
+    svg path{
+      fill: #ffc700;
+      transition: fill 0.4s;
+    }
+  }
+}
+
 @import 'media';
