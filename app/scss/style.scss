@@ -133,7 +133,7 @@
 }
 
 .tour{
-  padding: 200px 0;
+  padding: 200px 0 150px;
   &__top .container{
     margin-bottom: 90px;
     display: flex;
@@ -254,6 +254,25 @@
     li.slick-active{
       background-color: #0499dd;
     }
+  }
+}
+
+.about{
+  background: url(../images/about-bg.jpg) no-repeat;
+  padding: 150px 0;
+  &__title{
+    margin-bottom: 40px;
+  }
+  &__wrapper{
+    padding: 60px 75px 100px;
+    max-width: 540px;
+    width: 100%;
+    margin-left: auto;
+    background-color: #ededed;
+    border-radius: 10px;
+  }
+  &__text{
+    margin-bottom: 20px;
   }
 }
 
