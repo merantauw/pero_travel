@@ -1,28 +1,29 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'global';
-@import 'libs';
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "global";
+@import "libs";
 
-.header{
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/header-bg.jpg) center/100% no-repeat;
+.header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(../images/header-bg.jpg) center/100% no-repeat;
   height: 789px;
-  &__top{
+  &__top {
     position: fixed;
     z-index: 2;
     height: 107px;
     width: 100%;
     transition: background-color 0.4s ease-out, height 0.4s;
   }
-  &__top.header__top--bg{
-    background-color: rgba(4, 153, 221,0.6);
+  &__top.header__top--bg {
+    background-color: rgba(4, 153, 221, 0.6);
     transition: background-color 0.4s ease-out, height 0.4s;
     height: 77px;
-    .header__top-inner{
+    .header__top-inner {
       padding: 10px 15px;
     }
   }
-  &__top-inner{
+  &__top-inner {
     padding: 25px 15px;
     display: flex;
     justify-content: space-between;
@@ -33,120 +34,120 @@
     left: 0;
     right: 0;
   }
-  &__burger{
+  &__burger {
     display: none;
   }
-  &__list{
+  &__list {
     display: flex;
   }
-  &__item{
+  &__item {
     color: #fff;
-    &:not(:last-child){
+    &:not(:last-child) {
       margin-right: 20px;
     }
-    &:hover{
+    &:hover {
       color: #ffc700;
     }
   }
 
-  &__content{
+  &__content {
     padding-top: 237px;
   }
-  &__content-link svg path{
+  &__content-link svg path {
     transition: all 0.4s;
   }
-  &__content-link:hover svg path{
+  &__content-link:hover svg path {
     fill: #ffc700;
     stroke: #ffc700;
     transition: all 0.4s;
   }
-  &__wrapper{
+  &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  &__title{
+  &__title {
     max-width: 723px;
     @include montserrat-700;
     font-size: 72px;
     line-height: 88px;
     color: #fff;
     margin-bottom: 60px;
-    span{
+    span {
       @include montserrat-900;
       font-size: 96px;
       line-height: 117px;
     }
   }
-  &__link svg path{
+  &__link svg path {
     transition: all 0.4s;
   }
-  &__link:hover svg path{
+  &__link:hover svg path {
     fill: #ffc700;
     transition: all 0.4s;
   }
-  &__content-box{
+  &__content-box {
     display: flex;
     position: absolute;
     right: 0;
     bottom: 156px;
     transform: translatex(120px);
     transition: transform 0.5s;
-    &:hover{
+    &:hover {
       transform: translatex(-15px);
       transition: transform 0.5s;
     }
   }
-  &__content-video{
+  &__content-video {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 360px;
     height: 227px;
     border-radius: 10px;
-    &:not(:last-child){
+    &:not(:last-child) {
       margin-right: 10px;
     }
   }
-  &__content-video:hover{
-    svg g{
-      circle{
+  &__content-video:hover {
+    svg g {
+      circle {
         stroke: #7fffd4;
       }
-      path{
+      path {
         fill: #7fffd4;
       }
     }
-    svg{
+    svg {
       animation: pulse 1s linear infinite;
     }
   }
 }
 
-@keyframes pulse{
-  0%{
+@keyframes pulse {
+  0% {
     transform: scale(1);
   }
-  100%{
+  100% {
     transform: scale(0.75);
   }
 }
 
-.tour{
+.tour {
   padding: 200px 0 150px;
-  &__top .container{
+  &__top .container {
     margin-bottom: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  &__content{
+  &__content {
     overflow: hidden;
   }
-  &__slider{
+  &__slider {
     padding-bottom: 80px;
   }
-  &__item{
+  &__item {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -158,112 +159,111 @@
     background: #d4d4d4;
     border-radius: 10px;
   }
-  &__item--first{
+  &__item--first {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.121739) 0%, #000000 100%), url(../images/tour/tour-bg-1.jpg);
   }
-  &__item--second{
+  &__item--second {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.121739) 0%, #000000 100%), url(../images/tour/tour-bg-2.jpg);
   }
-  &__item--third{
+  &__item--third {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.121739) 0%, #000000 100%), url(../images/tour/tour-bg-3.jpg);
   }
-  &__item--fourth{
+  &__item--fourth {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.121739) 0%, #000000 100%), url(../images/tour/tour-bg-4.jpg);
   }
   &__type,
   &__info span,
   &__description,
-  &__btn{
+  &__btn {
     color: #fff;
     font-size: 12px;
     line-height: 15px;
   }
-  &__btn{
+  &__btn {
     position: absolute;
     bottom: 42px;
   }
-  &__item-title{
+  &__item-title {
     @include montserrat-700;
     margin-bottom: 10px;
-    color: #FFC700;
+    color: #ffc700;
   }
-  &__info{
+  &__info {
     margin-bottom: 20px;
   }
-  &__info span{
+  &__info span {
     padding-left: 16px;
     position: relative;
   }
-  &__info span::before{
-    content: '';
+  &__info span::before {
+    content: "";
     position: absolute;
     top: 2px;
     left: 0;
     width: 12px;
     height: 12px;
   }
-  &__duration{
+  &__duration {
     margin-right: 15px;
-    &::before{
+    &::before {
       background-image: url(../images/icons/duration.png);
     }
   }
-  &__price::before{
+  &__price::before {
     background-image: url(../images/icons/price.png);
   }
-  .slick-arrow{
+  .slick-arrow {
     position: absolute;
     bottom: 0;
     transition: transform 0.4s;
-    &:active{
+    &:active {
       transform: scale(0.7);
       transition: transform 0.4s;
     }
-    svg path{
-      stroke: #0499DD;
+    svg path {
+      stroke: #0499dd;
     }
   }
-  .slick-arrow.slick-disabled{
-    svg path{
+  .slick-arrow.slick-disabled {
+    svg path {
       stroke: #d4d4d4;
     }
   }
-  .slick-next{
+  .slick-next {
     left: 5%;
   }
-  .slick-list.draggable{
+  .slick-list.draggable {
     width: 100vw;
     // margin-left: -20px;
   }
-  .slick-slide{
+  .slick-slide {
     width: 360px;
     margin-right: 20px;
   }
-  .slick-dots{
+  .slick-dots {
     display: flex;
     position: absolute;
     bottom: 4%;
     left: 10%;
     font-size: 0;
-    li{
+    li {
       width: 175px;
       height: 2px;
       background-color: #d4d4d4;
-      // border: 2px solid #0499dd;
     }
-    li.slick-active{
+    li.slick-active {
       background-color: #0499dd;
     }
   }
 }
 
-.about{
+.about {
   background: url(../images/about-bg.jpg) no-repeat;
   padding: 150px 0;
-  &__title{
+  &__title {
     margin-bottom: 40px;
   }
-  &__wrapper{
+  &__wrapper {
     padding: 60px 75px 100px;
     max-width: 540px;
     width: 100%;
@@ -271,29 +271,29 @@
     background-color: #ededed;
     border-radius: 10px;
   }
-  &__text{
+  &__text {
     margin-bottom: 20px;
   }
 }
 
-.tour-types{
+.tour-types {
   padding: 150px 0;
-  &__title{
+  &__title {
     margin-bottom: 90px;
   }
-  &__inner{
+  &__inner {
     margin-bottom: 20px;
   }
-  &__list{
+  &__list {
     display: flex;
     flex-wrap: wrap;
   }
-  &__item{
+  &__item {
     position: relative;
     margin-bottom: 40px;
     padding-left: 95px;
-    &::before{
-      content: '';
+    &::before {
+      content: "";
       position: absolute;
       width: 75px;
       height: 75px;
@@ -301,61 +301,61 @@
       top: 0;
     }
   }
-  &__item:nth-child(1)::before{
+  &__item:nth-child(1)::before {
     background: url(../images/icons/bus.png) no-repeat;
   }
-  &__item:nth-child(2)::before{
+  &__item:nth-child(2)::before {
     background: url(../images/icons/jeep.png) no-repeat;
   }
-  &__item:nth-child(3)::before{
+  &__item:nth-child(3)::before {
     background: url(../images/icons/yacht.png) no-repeat;
   }
-  &__item:nth-child(4)::before{
+  &__item:nth-child(4)::before {
     background: url(../images/icons/canyoning.png) no-repeat;
     height: 66px;
   }
-  &__subtitle{
+  &__subtitle {
     @include montserrat-700;
     font-size: 18px;
     line-height: 22px;
     color: #0499dd;
     margin-bottom: 10px;
   }
-  &__text{
+  &__text {
     max-width: 455px;
     width: 100%;
   }
-  &__desc{
+  &__desc {
     max-width: 550px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 20px;
   }
-  &__btn{
+  &__btn {
     display: block;
     max-width: 230px;
     margin: 0 auto;
-    svg path{
+    svg path {
       transition: fill 0.4s;
     }
   }
-  &__btn:hover{
-    svg path{
+  &__btn:hover {
+    svg path {
       fill: #ffc700;
       transition: fill 0.4s;
     }
   }
 }
 
-.reviews{
+.reviews {
   padding-bottom: 150px;
-  &__top .container{
+  &__top .container {
     margin-bottom: 90px;
     display: flex;
     justify-content: space-between;
   }
-  &__item{
+  &__item {
     position: relative;
     padding: 40px 27px 40px 45px;
     background: #ededed;
@@ -364,79 +364,144 @@
     justify-content: space-between;
     max-width: 740px;
     width: 100%;
-    &::before{
-      content: '';
+    &::before {
+      content: "";
       position: absolute;
       bottom: 0;
       right: 0;
       width: 198px;
       height: 168px;
-      background: url('../images/review-bg.png') no-repeat;
+      background: url("../images/review-bg.png") no-repeat;
     }
   }
-  &__slider{
+  &__slider {
     padding-bottom: 80px;
   }
-  &__img-box{
+  &__img-box {
     max-width: 245px;
     width: 100%;
     border-radius: 10px;
-    img{
+    img {
       width: 100%;
       border-radius: 10px;
     }
   }
-  blockquote{
+  blockquote {
     max-width: 395px;
-    cite{
+    cite {
       display: block;
       @include montserrat-700;
       margin-bottom: 20px;
     }
   }
-  .slick-arrow{
+  .slick-arrow {
     position: absolute;
     bottom: 0;
     transition: transform 0.4s;
-    &:active{
+    &:active {
       transform: scale(0.7);
       transition: transform 0.4s;
     }
-    svg path{
-      stroke: #0499DD;
+    svg path {
+      stroke: #0499dd;
     }
   }
-  .slick-arrow.slick-disabled{
-    svg path{
+  .slick-arrow.slick-disabled {
+    svg path {
       stroke: #d4d4d4;
     }
   }
-  .slick-next{
+  .slick-next {
     left: 5%;
   }
-  .slick-list.draggable{
+  .slick-list.draggable {
     width: 100vw;
   }
-  .slick-slide{
+  .slick-slide {
     width: 740px;
     margin-right: 20px;
   }
-  .slick-dots{
+  .slick-dots {
     display: flex;
     position: absolute;
     bottom: 6%;
     left: 10%;
     font-size: 0;
-    li{
+    li {
       width: 175px;
       height: 2px;
       background-color: #d4d4d4;
-      // border: 2px solid #0499dd;
     }
-    li.slick-active{
+    li.slick-active {
       background-color: #0499dd;
     }
   }
 }
 
-@import 'media';
+.questions {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/questions-bg.jpg) 50% / cover no-repeat;
+  height: 640px;
+  &__wrapper {
+    position: relative;
+    margin-left: auto;
+    padding: 155px 100px;
+    background: rgba(0, 0, 0, 0.3);
+    max-width: 560px;
+    width: 100%;
+    backdrop-filter: blur(3px);
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+    @include montserrat-700;
+  }
+  &__text {
+    color: #ffc700;
+    margin-bottom: 45px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    input {
+      background: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 45px;
+      color: #fff;
+      &::placeholder {
+        font-size: 12px;
+        line-height: 15px;
+        @include montserrat-500;
+        color: #fff;
+      }
+      &:last-child {
+        margin-bottom: 82px;
+      }
+      &:focus{
+        border: none;
+        font-size: 12px;
+        border-bottom: 1px solid #fff;
+        color: #fff;
+      }
+      &:focus-visible{
+        border: none;
+        border-bottom: 1px solid #fff;
+      }
+      &:active{
+        border: none;
+        font-size: 12px;
+        border-bottom: 1px solid #fff;
+        color: #fff;
+      }
+    }
+    button {
+      max-width: 230px;
+      width: 100%;
+    }
+  }
+}
+
+@import "media";
