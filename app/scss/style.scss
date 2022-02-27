@@ -504,4 +504,40 @@
   }
 }
 
+.footer{
+  padding: 30px 0;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item{
+    padding-left: 28px;
+    padding-top: 2px;
+    position: relative;
+    margin-bottom: 5px;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 19px;
+      height: 19px;
+    }
+  }
+  &__wa{
+    background: url(../images/icons/wa-icon.png) no-repeat;
+  }
+  &__tg{
+    background: url(../images/icons/tg-icon.png) no-repeat;
+  }
+  &__socials-box{
+    display: flex;
+    margin-top: 20px;
+  }
+  &__socials-item{
+    margin-right: 10px;
+  }
+}
+
 @import "media";
