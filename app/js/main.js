@@ -1,6 +1,6 @@
 $(function () {
   //первый слайдер
-  $('.tour__slider').slick({
+  $('.tour__slider,.reviews__slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     centerMode: false,

@@ -242,7 +242,7 @@
   .slick-dots{
     display: flex;
     position: absolute;
-    bottom: 3%;
+    bottom: 4%;
     left: 10%;
     font-size: 0;
     li{
@@ -344,6 +344,97 @@
     svg path{
       fill: #ffc700;
       transition: fill 0.4s;
+    }
+  }
+}
+
+.reviews{
+  padding-bottom: 150px;
+  &__top .container{
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    position: relative;
+    padding: 40px 27px 40px 45px;
+    background: #ededed;
+    border-radius: 10px;
+    display: flex !important;
+    justify-content: space-between;
+    max-width: 740px;
+    width: 100%;
+    &::before{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 198px;
+      height: 168px;
+      background: url('../images/review-bg.png') no-repeat;
+    }
+  }
+  &__slider{
+    padding-bottom: 80px;
+  }
+  &__img-box{
+    max-width: 245px;
+    width: 100%;
+    border-radius: 10px;
+    img{
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+  blockquote{
+    max-width: 395px;
+    cite{
+      display: block;
+      @include montserrat-700;
+      margin-bottom: 20px;
+    }
+  }
+  .slick-arrow{
+    position: absolute;
+    bottom: 0;
+    transition: transform 0.4s;
+    &:active{
+      transform: scale(0.7);
+      transition: transform 0.4s;
+    }
+    svg path{
+      stroke: #0499DD;
+    }
+  }
+  .slick-arrow.slick-disabled{
+    svg path{
+      stroke: #d4d4d4;
+    }
+  }
+  .slick-next{
+    left: 5%;
+  }
+  .slick-list.draggable{
+    width: 100vw;
+  }
+  .slick-slide{
+    width: 740px;
+    margin-right: 20px;
+  }
+  .slick-dots{
+    display: flex;
+    position: absolute;
+    bottom: 6%;
+    left: 10%;
+    font-size: 0;
+    li{
+      width: 175px;
+      height: 2px;
+      background-color: #d4d4d4;
+      // border: 2px solid #0499dd;
+    }
+    li.slick-active{
+      background-color: #0499dd;
     }
   }
 }
