@@ -16,7 +16,7 @@
     transition: background-color 0.4s ease-out, height 0.4s;
   }
   &__top.header__top--bg {
-    background-color: rgba(4, 153, 221, 0.6);
+    background-color: rgba(4, 153, 221, 0.9);
     transition: background-color 0.4s ease-out, height 0.4s;
     height: 77px;
     .header__top-inner {
@@ -67,16 +67,27 @@
     align-items: center;
   }
   &__title {
+    text-transform: uppercase;
+    position: relative;
     max-width: 723px;
     @include montserrat-700;
     font-size: 72px;
-    line-height: 88px;
+    line-height: 65px;
     color: #fff;
     margin-bottom: 60px;
     span {
       @include montserrat-900;
       font-size: 96px;
       line-height: 117px;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      bottom: 65px;
+      right: 35px;
+      width: 151px;
+      height: 64px;
+      background: url(../images/travel-bg.png) no-repeat;
     }
   }
   &__link svg path {
@@ -501,6 +512,9 @@
       max-width: 230px;
       width: 100%;
     }
+    &__btn{
+
+    }
   }
 }
 
@@ -524,6 +538,9 @@
       width: 19px;
       height: 19px;
     }
+  }
+  &__link:hover{
+    text-decoration: underline;
   }
   &__wa {
     background: url(../images/icons/wa-icon.png) no-repeat;
