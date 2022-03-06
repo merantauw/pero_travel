@@ -172,6 +172,7 @@
     }
     &__item {
       max-width: 300px;
+      padding: 175px 16px 0;
     }
     &__btn {
       bottom: 30px;
@@ -427,8 +428,8 @@
     }
   }
 
-  .reviews{
-    .slick-dots li{
+  .reviews {
+    .slick-dots li {
       width: 32px;
     }
   }
@@ -446,7 +447,7 @@
     &__content {
       padding-top: 100px;
     }
-    &__content-box{
+    &__content-box {
       bottom: -422px;
     }
     &__title {
@@ -462,67 +463,67 @@
         right: 28px;
       }
     }
-    &__list{
-      li{
+    &__list {
+      li {
         font-size: 25px;
       }
     }
   }
 
-  .tour{
+  .tour {
     padding: 200px 0 75px;
-    &__top .container{
+    &__top .container {
       margin-bottom: 45px;
     }
-    &__item{
+    &__item {
       padding: 170px 16px 0;
     }
   }
 
-  .about{
-    &__wrapper{
+  .about {
+    &__wrapper {
       padding: 45px;
     }
   }
 
-  .tour-types{
+  .tour-types {
     padding: 75px 0;
-    &__title{
+    &__title {
       margin-bottom: 40px;
     }
   }
 
-  .gallery{
+  .gallery {
     padding-bottom: 75px;
-    .container{
+    .container {
       margin-bottom: 40px;
     }
   }
 
-  .reviews{
+  .reviews {
     padding-bottom: 75px;
-    &__top .container{
+    &__top .container {
       margin-bottom: 40px;
     }
   }
 
-  .questions{
+  .questions {
     height: 500px;
-    &__wrapper{
+    &__wrapper {
       padding: 85px 51px;
     }
   }
 }
 
-@media (max-height: 380px) and (orientation: landscape){
-  .tour{
-    .slick-dots li{
+@media (max-height: 380px) and (orientation: landscape) {
+  .tour {
+    .slick-dots li {
       width: 54px;
     }
   }
 
-  .reviews{
-    .slick-dots li{
+  .reviews {
+    .slick-dots li {
       width: 54px;
     }
   }
