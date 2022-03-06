@@ -6,7 +6,7 @@
 
 .header {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url(../images/header-bg.jpg) center/100% no-repeat;
+    url(../images/header-bg.jpg) center/cover no-repeat;
   height: 789px;
   &__top {
     position: fixed;
@@ -52,6 +52,7 @@
 
   &__content {
     padding-top: 237px;
+    position: relative;
   }
   &__content-link svg path {
     transition: all 0.4s;
@@ -101,7 +102,7 @@
     display: flex;
     position: absolute;
     right: 0;
-    bottom: 156px;
+    bottom: -405px;
     transform: translatex(120px);
     transition: transform 0.5s;
     &:hover {
@@ -562,9 +563,11 @@
   .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 90px;
   }
   &__wrapper {
+    padding: 0 15px;
     max-width: 1430px;
     width: 100%;
     margin: 0 auto;
@@ -609,6 +612,11 @@
   }
   &__img-box{
     position: relative;
+    img{
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
   }
   &__hover{
     position: absolute;

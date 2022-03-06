@@ -10,6 +10,22 @@ $(function () {
     variableWidth: true,
     dots: true,
     infinite: false,
+    responsive: [
+      {
+        breakpoint: 1281,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+    ]
   });
 
   //липкая шапка
@@ -36,4 +52,20 @@ $(function () {
     }, 1500);
   });
 
+  //выезд блоков при скролле
+  $(document).on( "scroll", function(){
+  
+    if($("#test").hasClass("hide")){
+      $("#test").removeClass("hide").addClass("slideRight");
+      console.log("scrolled");
+    }
+  });
+
+  //бургер-меню
+  $('.header__burger, .header__item').on('click', function () {
+    $('.header__burger').toggleClass('active');
+    $('.menu').toggleClass('active');
+    $('header__top').toggleClass('header__top--bg');
+    $('body,html').toggleClass('lock');
+  });
 });
